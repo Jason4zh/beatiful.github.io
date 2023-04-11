@@ -9,9 +9,12 @@
             margin: auto;
             text-align: center;
         }
-        .main {
+        .main,.introduction{
             margin: auto;
             text-align: left;
+            animation-name: main;
+            animation-duration: 3s;
+            animation-fill-mode: both;
         }
 	    .bottom {
             margin: auto;
@@ -21,6 +24,17 @@
             left: 0px;
             width: 100%;
             line-height: 50px;
+            animation-name: bottom;
+            animation-duration: 3s;
+            animation-fill-mode: both;
+        }
+        @keyframes main{
+            from{transform: translateX(100%);opacity: 0;}
+            to{transform: translateX(0%);opacity: 1;}
+        }
+        @keyframes bottom{
+            from{transform: translateX(0%);opacity: 0;}
+            to{transform: translateX(0%);opacity: 1;}
         }
     </style>
     <link rel="shortcut icon" href="./image/favicon.ico">
@@ -33,7 +47,35 @@
         <br>
         <a href="https://music.163.com/#/album?id=158468886" target="_blank">曲目来源</a>
     </div>
+    <div class="introduction">
+        <h2>剧情简介</h2>
+        2044年至2058年，科学家们发现太阳正急速衰老、持续膨胀，数百年内将吞噬包括地球在内的整个太阳系。面临末日灾难<br>
+        与生命存续的双重挑战，联合政府成立，总部设立在美国纽约，但世界政局动荡不堪，人类纷纷自救但仍内斗不止，大大小<br>
+        小各种战争频发，伴随着重工业的无序扩张，世界一片荒芜，科技在重压下加速发展，人类转入以航天工业为主的计划经济<br>
+        社会，并举全球之力提出了数百个自救计划，其中以下四种计划进入方案论证阶段：<br><br>
+
+        1.移山计划：由中国提出，为流浪地球主体计划，计划建造1万座发动机推动地球走向新家园，行星发动机同步网络依赖原<br>
+        本是互联网的地下光纤，是利用网络切片形成的高密级发动机专用网络<br>
+        2.方舟计划：由美国提出，在地球同步轨道建立“方舟号空间站”，利用空间站带领人类逃离太阳系，即“飞船派”，太空电<br>
+        梯是方舟计划的核心<br>
+        3.逐月计划：由俄罗斯提出，初始的“逐月计划”是考虑到月球质量只有地球的1/81，体积是地球的1/49，自转角动能远远<br>
+        小于地球，刹车/推进耗费资源远小于地球，且氦-3储量丰富，因此期望改造月球作为天然逃生舱，带领人类离开家园。月<br>
+        球基地是逐月计划的核心，但是因为月球结构和大规模生态循环问题，最终发现月球不适合改造，被并入移山计划，计划放<br>
+        逐月球<br>
+        4.数字生命计划：面对可能完全无法战胜的天灾和日渐困难的日常生活，“虚无主义”和“享乐主义”思潮爆发，许多人认为转<br>
+        入数字世界，只要载体不灭，人类即可永生，脑机接口是数字生命计划的核心，在数字生命计划展开时，各国均兴建了数字<br>
+        生命研究所，最终被UEG伦理委员会禁止。<br><br>
+
+        其中，以主张向外太空移民的“移山计划”和主张将人类意识数字化的“数字生命计划”为主要流派。为确保更多人存活下来，<br>
+        “移山计划”被最终选定。该计划将建造万台行星发动机，驱使地球离开太阳系；同时建造三台卫星发动机，放逐月球，保障<br>
+        地球摆脱月球引力，顺利启程。然而随着“移山计划”的开展，实施难度和高昂的成本，对全球各方利益影响加剧，危机四伏。<br>
+        此后，在一系列攻击下，处在9万公里高度的方舟空间站因爆炸坠落地球，并引起连锁爆炸反应导致整个太空电梯基地被摧毁。<br>
+        为了拯救地球，流浪地球时代的年轻人再次挺身而出，展开争分夺秒的生死之战。<br><br>
+
+        更多详见<a href="https://wiki.unitedearth.cc/%E6%B5%81%E6%B5%AA%E5%9C%B0%E7%90%83%E6%B3%95" target="_blank">《流浪地球法》</a>
+    </div>
     <div class="main">
+        <h2>音乐</h2>
         !..._ _...!
         <audio src="./audio/阿鲲 - !..._   _...!.mp3" controls loop="loop"></audio>
         <br>
@@ -149,7 +191,7 @@
         <audio src="./audio/阿鲲 - New York.mp3" controls loop="loop"></audio>
     </div>
     <div class="bottom">
-	    Tips:下载音频只需轻触音频右侧三个点即可。
+	    Tips:音频读取可能较慢，请耐心等待。
     </div>
 </body>
 
